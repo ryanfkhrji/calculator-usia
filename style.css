@@ -1,0 +1,85 @@
+:root {
+  --color-1: #313866;
+  --color-2: #504099;
+  --color-3: #974ec3;
+  --color-4: #fe7be5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+section {
+  background-color: var(--color-1);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: var(--color-2);
+}
+
+.card .card-body h1 {
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: var(--color-4);
+}
+
+.card .card-body .label {
+  color: var(--color-4);
+  margin-bottom: 18px;
+}
+
+.card .card-body .birthday {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 18px;
+  background: var(--color-3);
+  color: var(--color-4);
+}
+
+.card .card-body .birthday:focus {
+  outline: none;
+}
+
+.card .card-body .birthday::-webkit-input-placeholder {
+  color: #fe7be5;
+}
+
+.card .card-body .btn-chek {
+  border: none;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  background-color: var(--color-4);
+  transition: all 0.5s;
+}
+
+.card .card-body .btn-chek:hover {
+  background-color: var(--color-3);
+  color: var(--color-4);
+}
+
+.card .card-body .chek-result {
+  color: var(--color-4);
+}
